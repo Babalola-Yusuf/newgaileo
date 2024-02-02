@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaileo Tech, Tech Hub, Transitioning into tech, coding, UI UX, Scratch, STEM, Data analysis, Data Science, Animations, games and app development, Front-end developer, back-end developer, web development, tech school</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<style>
+       body{
+        background-color: gainsboro;
+       }
+
+       .welcome{
+        flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      margin: 10px;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 20px;
+      line-height: 30px;
+       }
+
+       .benefits{
+      text-align: justify;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 20px;
+      line-height: 30px;
+       }
+
+       .benefits b{
+        text-align: justify;
+        align-items: center;
+        margin-left: 10%;
+        font-size: large;
+       }
+
+       #more {display: none;}
+
+       .hello-prospective{
+        color: #000;
+        padding: 2px;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        line-height: 30px;
+       }
+
+       .values li{
+        text-decoration: none;
+        list-style: none;
+        text-align: justify;
+        margin-left: 10%;
+        font-family: cursive;
+        font-size: large;
+       }
+
+       video{
+        margin-top: 20px;
+       }
+
+       .progs li{
+        text-decoration: none;
+        list-style: circle;
+        margin-left: 10%;
+        font-size: large;
+        text-align: justify;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+       .progs b{
+        text-align: justify;
+        align-items: center;
+        margin-left: 10%;
+        font-size: large;
+       }
+
+       .uxgrid b{
+        text-align: justify;
+        align-items: center;
+        margin-left: 10%;
+        font-size: large;
+       }
+
+       .uxgrid{
+        line-height: 30px;
+       }
+
+    .programs{
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      margin: 10px;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 20px;
+      line-height: 30px;
+     } 
+     
+     h1, h2, h3{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 30px;
+       color: black;
+      }
+
+     p{
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+     img {
+      border: 2px;
+      width: 200px;
+      height: 120px;
+      border-radius: 10%;
+      overflow: hidden;
+    }
+   
+    hr{
+      width: 20%;
+      margin-left: 50%;
+      margin-right: 50%;
+      margin-bottom: 20px;
+      align-content: center; border-style: dashed;
+      border-color: black;
+      border-width: 5px;
+      border-top-color: white;
+    }
+    
+    .skills{
+      align-items: center;
+      margin: 10px;
+      padding: 20px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .connect{
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10%;
+        padding-top: 5%;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: bolder;
+        line-height: 200%;
+    }
+    footer{
+        background-color: white;
+    }
+  </style>
+
+  <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<body>
+  
+    <div class="container">
+        <nav>
+            <div class="logo-wrapper">
+                <a href="contact.html"><img alt="a background" src="Frame 542.png"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html" id="navButton">Home</a></li>
+                    <li><a href="courses.html" id="navButton">Our Courses</a></li>
+                    <li><a href="project.html" id="navButton">Project Showcase</a></li>
+                    <li><a href="contact.html" id="navButton">Contact Us</a></li>
+                     </ul>
+            </div>
+        </nav>
+        <i class="fa-solid fa-bars"></i> 
+    </div>
+    
+            <section class="header">
+                <div class="text-bg">
+                    <p>Gaileo Tech Hub</p>
+                    <h4><i><b>"Where Tech Gurus Are Made..."</b></i></h4><br>
+                    <a href="https://t.me/gaileotech" id="myButton">Contact Us</a>        
+                </div>
+            </section>
+
+            <div class="skills">
+                <p>Now is the best time to learn from our list of high in-demand software skiills at your own pace and get job ready within a few weeks. </p>
+            </div>
+            <div class="join">
+                <form class="join">
+                    <h2>Like to enroll to Gaileo Tech Hub?<br>
+                        Fill out this Form here</h2><br>
+                    <label for="name"></label> <input type="text" id="name" placeholder="Name" required><br>
+                    <label for="email"></label> <input type="email" id="email" placeholder="Email" required><br>
+                    <label for="pno"></label> <input type="tel" id="pno" placeholder="Phone Number" required><br>
+                    <label for="rqst"></label> <input type="rqst" id="text" placeholder="Your chosen course(s)" required><br>                    
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <div class="connect">
+            <h3>Connect With Us</h3>
+            <a>Facebook </a><a> Instagram</a>
+            <div class="contact">
+                <div class="socialmedia">               
+                <a href="">Facebook</a><br>
+                <a>+234 703 062 5352</a><br>
+                <a href="">Instagram</a><br>
+            </div>
+        </div>
+    </div>
+
+           
+        <footer id="footer">
+            <p>&copy; 2023 Gaileo Tech Hub. All rights reserved.</p>
+        </footer>
+
+        <script src="./script.js"></script>
+</body>
+</html>
