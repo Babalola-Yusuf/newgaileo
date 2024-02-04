@@ -313,6 +313,7 @@ footer{
   border-radius: 20px;
   padding: 20px;
   border: 2px solid rgb(151, 144, 144);
+  text-align: center;
 }
 
 .write img{
@@ -332,6 +333,9 @@ footer{
   transition: 0.5s;
 }
 
+.p-10{
+  padding: 10px;
+}
 /* Styles for screens larger than 768px */
 @media screen and (min-width: 768px) {
   body {
