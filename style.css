@@ -175,11 +175,20 @@ nav ul{
     }
 
     form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       border-radius: 20px;
       padding-bottom: 10%;
       padding-top: 5%;
       background-color: rgb(165, 176, 165);
+     }
+
+     .form-inputs{
+      width: 870px;
+      align-self: center;
      }
 
      input{
@@ -192,14 +201,23 @@ nav ul{
      border-radius: 10px;
      font-size: x-large;
      }
-
+    
+     .submit{
+      display: flex;
+      padding-top: 20px;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
      .submit input{
       background-color: green;
-      border-radius: 40px;
-      font-size: x-large;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: large;
       font-weight: bolder;
       color: white;
-      width: 20%;
+      width: 100px;
      }
 
      .grid{
@@ -224,6 +242,55 @@ nav ul{
       grid-template-columns:repeat(3, 2fr) ;
      }
      
+     .contact-one{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .connect .contact-one a{
+      background-color:  rgb(167, 4, 4);
+      height: 60px;
+      width: 60px;
+      padding: 20px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .contact-one i{
+     color: white;
+    }
+    
+    .socialmedia{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    
+    .socialmedia-frame{
+      border-width: 2px;
+      border-color: #000;
+      border-style: solid;
+      width: 360px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      margin-top: 40px;
+    }
+    .socialmedia-frame i{
+      color: rgb(167, 4, 4);
+      font-size: 60px;
+    }
+    
+
 footer{
      background-color: gainsboro;
     text-align: center;
@@ -234,7 +301,36 @@ footer{
     font-size: xx-large;
 }
 
+.blog{
+  display: grid;
+  grid-template-columns:repeat(3, 2fr);
+  gap: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
+.write{
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid rgb(151, 144, 144);
+}
+
+.write img{
+  height: 300px;
+  width: 300px;
+}
+
+.write a{
+  background-color: #FFAA1D;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.write a:hover{
+  background-color: rgb(3, 69, 3);
+  transition: 0.5s;
+}
 
 /* Styles for screens larger than 768px */
 @media screen and (min-width: 768px) {
@@ -244,36 +340,38 @@ footer{
 }
 
 @media screen and (max-width: 850px) {
-  .prog{
+  .courses{
     grid-template-columns:repeat(2, 3fr) ;
    }
    .header .text-bg h3{
     font-size: 15px;
     margin-bottom: 5px;
   }
-}
-/* Styles for screens smaller than 768px */
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
+  .blog{
+    grid-template-columns:repeat(2, 3fr);
   }
-  .coding img{
-    width: 80%;
-   }
   
 }
 
-@media screen and (max-width: 480px) {
+/* Styles for screens smaller than 1084px */
+@media screen and (max-width:1084px) {
+  .blog{
+    grid-template-columns:repeat(2, 2fr);
+  }
+}
+
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 767px) {
   body {
     font-size: smaller;
   }
   .coding img{
     width: 80%;
    }
-   .prog{
+  
+   .courses{
     grid-template-columns:repeat(1, 6fr) ;
    }
-
    .container i{
     display: block;
     position: absolute;
@@ -303,4 +401,22 @@ footer{
     margin-bottom: 15px;
     color: #000;
   }
+
+  .socialmedia{
+    flex-direction: column;
+  }
+
+  .form-inputs{
+    width: 360px;
+  }
+
+  input{
+    width: 100%;
+  }
+
+  .blog{
+    grid-template-columns:repeat(1, 2fr);
+  }
+  
 }
+

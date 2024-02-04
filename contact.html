@@ -6,6 +6,7 @@
     <title>Gaileo Tech, Tech Hub, Transitioning into tech, coding, UI UX, Scratch, STEM, Data analysis, Data Science, Animations, games and app development, Front-end developer, back-end developer, web development, tech school</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <style>
@@ -211,27 +212,46 @@ function myFunction() {
                 <form class="join">
                     <h2>Like to enroll to Gaileo Tech Hub?<br>
                         Fill out this Form here</h2><br>
-                    <label for="name"></label> <input type="text" id="name" placeholder="Name" required><br>
-                    <label for="email"></label> <input type="email" id="email" placeholder="Email" required><br>
-                    <label for="pno"></label> <input type="tel" id="pno" placeholder="Phone Number" required><br>
-                    <label for="rqst"></label> <input type="rqst" id="text" placeholder="Your chosen course(s)" required><br>                    
-                    <div class="submit">
-                        <input type="submit" value="Submit">
-                    </div>
+                        <div class="form-inputs">
+                            <label for="name"></label> <input type="text" id="name" placeholder="Name" required><br>
+                            <label for="email"></label> <input type="email" id="email" placeholder="Email" required><br>
+                            <label for="pno"></label> <input type="tel" id="pno" placeholder="Phone Number" required><br>
+                            <label for="rqst"></label> <input type="rqst" id="text" placeholder="Your chosen course(s)" required><br>                    
+                            <div class="submit">
+                            <div class="g-recaptcha recaptcha" data-sitekey="6Ld0pGUpAAAAAEhlUD64PWE_pqEbbPEzaQpCuzUZ"></div>
+                            <input class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit' value="Submit">
+                        </div>
+                        </div>
+                    
                 </form>
             </div>
 
             <div class="connect">
-            <h3>Connect With Us</h3>
-            <a>Facebook </a><a> Instagram</a>
-            <div class="contact">
-                <div class="socialmedia">               
-                <a href="">Facebook</a><br>
-                <a>+234 703 062 5352</a><br>
-                <a href="">Instagram</a><br>
+                <h2>Connect With Us</h2>
+                <div class="contact-one">
+                    <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </div>
+                
+                <div class="contact-two">
+                    <div class="socialmedia">
+                        <div class="socialmedia-frame">
+                            <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a><br>
+                            <p>check us on facebook...</p>
+                        </div>               
+                        <div class="socialmedia-frame">
+                            <a><i class="fa-solid fa-phone fa-xl"></i></a><br>
+                            <p>+234*********</p>
+                        </div>
+                        <div class="socialmedia-frame">
+                            <a href=""><i class="fa-brands fa-square-instagram fa-xl"></i></a><br>
+                            <p>check our instagram...</p>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
            
         <footer id="footer">
