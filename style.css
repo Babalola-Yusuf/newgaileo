@@ -336,6 +336,9 @@ footer{
 .p-10{
   padding: 10px;
 }
+.text-center{
+  text-align: center;
+}
 /* Styles for screens larger than 768px */
 @media screen and (min-width: 768px) {
   body {
